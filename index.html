@@ -2,27 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ab2529.org</title>
   <style>
     body {
       background-color: #000;
-      color: #fff;
+      color: #ffffff;
       font-family: monospace;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      overflow: auto;
+    }
+
+    .center-wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
+      height: 100%;
+      padding: 1rem;
+      box-sizing: border-box;
+      text-align: center;
     }
+
     pre {
       white-space: pre;
       font-size: 12px;
+      margin: 0;
+      overflow-x: auto;
+    }
+
+    .desktop-art {
+      display: block;
+    }
+
+    .mobile-art {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .desktop-art {
+        display: none;
+      }
+      .mobile-art {
+        display: block;
+        font-size: 10px;
+		margin-top: 40%;
+      }
     }
   </style>
 </head>
 <body>
-  <pre>
+  <div class="center-wrapper">
+    <pre class="desktop-art">
          888       .d8888b.  888888888   .d8888b.   .d8888b.                                
          888      d88P  Y88b 888        d88P  Y88b d88P  Y88b                               
          888             888 888               888 888    888                               
@@ -34,6 +66,84 @@
                                                                                         888 
                                                                                    Y8b d88P 
                                                                                     "Y88P"  
-  </pre>
+    </pre>
+
+    <pre class="mobile-art">
+ 8888b.    
+    "88b   
+.d888888   
+888  888   
+"Y888888   
+       
+888        
+888        
+888        
+88888b.    
+888 "88b   
+888  888   
+888 d88P   
+88888P"    
+    
+ .d8888b.  
+d88P  Y88b 
+       888 
+     .d88P 
+ .od888P"  
+d88P"      
+888"       
+888888888  
+ 
+888888888  
+888        
+888        
+8888888b.  
+     "Y88b 
+       888 
+Y88b  d88P 
+ "Y8888P"  
+
+ .d8888b.  
+d88P  Y88b 
+       888 
+     .d88P 
+ .od888P"  
+d88P"      
+888"       
+888888888  
+ 
+ .d8888b.  
+d88P  Y88b 
+888    888 
+Y88b. d888 
+ "Y888P888 
+       888 
+Y88b  d88P 
+ "Y8888P"  
+    
+d8b        
+Y8P        
+               
+ .d88b.    
+d88""88b   
+888  888   
+Y88..88P   
+ "Y88P"    
+  
+888d888    
+888P"      
+888        
+888        
+888        
+             
+ .d88b.    
+d88P"88b   
+888  888   
+Y88b 888   
+ "Y88888   
+     888   
+Y8b d88P   
+ "Y88P"    
+    </pre>
+  </div>
 </body>
 </html>
